@@ -1,16 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-# read and parse and use for reverse_complement function
-# three quotes serve as the documentation
-# conditionally add sequence information but lose the identified lines
 def read_fasta(filename):
-    """
-    Read a FASTA format sequence from the named file
-    """
     seq = ''
     f = open(filename)
     for line in f:
@@ -20,10 +8,3 @@ def read_fasta(filename):
     f.close()
     return seq
 print(read_fasta('ae.fa'))
-
-
-# In[ ]:
-
-
-
-
