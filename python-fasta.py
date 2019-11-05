@@ -1,4 +1,4 @@
-import sys
+import sys #imports python system libraries
 
 def read_fasta(filename):
     seq = ''
@@ -14,5 +14,5 @@ if len(sys.argv) < 2:
 	print("Need to provide filename as argument")
 	exit(1)
 
-print(read_fasta(sys.argv[1]))
+print(read_fasta(sys.argv[1])) #allows you to change file name without changing script
 
